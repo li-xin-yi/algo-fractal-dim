@@ -1,0 +1,84 @@
+\documentclass[12pt, margin=1in]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\geometry{margin=.5in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{observation}{Observation}
+\newtheorem*{notation}{Notation}
+
+
+\title{Lecture Notes}
+\author{Xinyi Li}
+\date{Feburary 16, 2024}
+
+\begin{document}
+
+\maketitle
+
+\begin{definition}
+
+    Given a TM $M$, let $\hat M$ be a TM that does the following:
+
+    input $\pi \in \Sigma^*$, dovetail computation of $M(\sigma)$ for all $\sigma \in \Sigma^*$ (in a fixed dovetailing order that does not depend on $\pi$) with $M(\sigma) \downarrow$ for some $\sigma$ that $\sigma \sqsubseteq \pi$ or $\pi \sqsubseteq \sigma$. If $\sigma = \pi$ then halt, else run forever.
+
+\end{definition}
+
+\begin{observation}
+    This construction has the following two properties:
+
+    \begin{enumerate}
+        \item  $\hat M$ is a prefix TM.
+        \item If $M$ is a prefix TM, then for all $\pi \in \Sigma^*$, $\hat M(\pi) \cong M(\pi)$
+    \end{enumerate}
+
+    Hence the sequence of TMs $\hat M_0, \hat M_1, \ldots$ is an enumeration of all prefix TMs.
+
+    We call this the standard enumeration of prefix TMs.
+\end{observation}
+
+\begin{definition}
+    A universal prefix TM is a prefix TM $\hat U$ such that for all $n \in \mathbb{N}$ and for all $\pi \in \Sigma^*$, $\hat U(0^n|\pi) \cong \hat M_n(\pi)$.
+\end{definition}
+
+\begin{definition}
+    Let $M$ be a TM,
+
+    \begin{enumerate}
+        \item for each $x \in \Sigma^*$, the set of programs for $n$ on $M$ is $$PROG_M(x) = \{\pi \in \Sigma^* \vert M(\pi) = x\}$$
+        \item The set of valid programs on $M$ is $$PROG_M = \{\pi \in \Sigma^* \vert M(\pi) \downarrow\}$$
+    \end{enumerate}
+\end{definition}
+
+\begin{observation}
+    For every TM $M$, $PROG_M = \cup_{x \in \Sigma^*} PROG_M(x)$ and this is a union of disjoint sets $PROG_M(x)$.
+
+    A prefix TM is a TM $M$ for which $PROG_M$ is a prefix set.
+\end{observation}
+
+\begin{definition}
+    \begin{enumerate}
+        \item The Kolmogorov complexity of a string $x \in \Sigma^*$ is $$K_M(x) = \min \{|\pi| \vert \pi \in PROG_M(x)\}$$ where $\min \emptyset = \infty$.
+        \item The Kolmogorov complexity of a string $x \in \Sigma^*$ is $$K(x) = K_{\hat U}(x)$$
+    \end{enumerate}
+\end{definition}
+
+\begin{notation}
+    $PROG(x) = PROG_{\hat U}(x)$ and $PROG = PROG_{\hat U}$ Note, then, that $K(x) = \min \{|\pi| \vert \pi \in PROG(x)\}$
+\end{notation}
+
+\begin{theorem}
+    (Optimality Theorem): For each prefix TM $M$, there is a \underline{optimality constant} $c_M$ such that for all $x \in \Sigma^*$, $K(x) \leq K_M(x) + c_M$.
+\end{theorem}
+
+\end{document}
