@@ -1,0 +1,5 @@
+sphinx
+myst-nb
+sphinx-math-dollar
+furo
+myst-parser
