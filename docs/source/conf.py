@@ -24,9 +24,9 @@ html_static_path = ['_static']
 
 
 extensions = [
+    'sphinx.ext.mathjax',
     # "myst_nb",
     # or "myst_parser" if you're just using MyST Markdown (no notebooks)
-    "sphinx_math_dollar", 
     "myst_parser", # Optional if you want $...$ style math
 ]
 
@@ -34,3 +34,5 @@ extensions = [
 #     '.rst': 'restructuredtext',
 #     '.md': 'markdown',
 # }
+
+myst_enable_extensions = ["linkify", "dollarmath", "amsmath", "colon_fence"]

@@ -3,3 +3,4 @@ myst-nb
 sphinx-math-dollar
 furo
 myst-parser
+linkify-it-py
