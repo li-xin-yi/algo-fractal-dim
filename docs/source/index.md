@@ -1,9 +1,9 @@
-# Algo Fractal Dim - Lecture Notes
+# Algorithmic Fractal Dimensions - Lecture Notes
 
 
 ```{toctree}
 :maxdepth: 1
-:caption: Home
+:caption: Table of Contents:
 
-Start <start.md>
+1. Metric Spaces<metric-spaces.md>
 ```

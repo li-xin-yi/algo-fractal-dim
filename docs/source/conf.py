@@ -6,9 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Algo Fractal Dim'
+project = 'Algorithmic Fractal Dimensions Lecture Notes'
 copyright = '2025, Xinyi Li'
 author = 'Xinyi Li'
+html_title = "Algorithmic Fractal Dimensions"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -21,6 +22,9 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 html_theme = 'furo'
 html_static_path = ['_static']
+html_css_files = [
+    "custom.css",  # Our new CSS file
+]
 
 
 extensions = [
@@ -28,6 +32,7 @@ extensions = [
     # "myst_nb",
     # or "myst_parser" if you're just using MyST Markdown (no notebooks)
     "myst_parser", # Optional if you want $...$ style math
+    "sphinx_design",
 ]
 
 # source_suffix = {

@@ -4,3 +4,4 @@ sphinx-math-dollar
 furo
 myst-parser
 linkify-it-py
+sphinx-design
