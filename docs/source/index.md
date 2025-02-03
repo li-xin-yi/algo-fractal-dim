@@ -2,8 +2,14 @@
 
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 :caption: Table of Contents:
+:numbered:
 
-1. Metric Spaces<metric-spaces.md>
+Metric Spaces<metric-spaces.md>
 ```
+
+
+### References
+
+1. https://web.math.wisc.edu/logic/talks/240216-Lutz.pdf
