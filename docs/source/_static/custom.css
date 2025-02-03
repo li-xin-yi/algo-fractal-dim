@@ -1,7 +1,9 @@
 :root {
     --icon--definition: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="18px"  ><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-640v560h560v-560h-80v280l-100-60-100 60v-280H200Zm0 560v-560 560Z"/></svg>');
 
-    --icon--fact: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="19px"  ><path d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Zm24-80h252q45-32 69.5-79T700-580q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 54 24.5 101t69.5 79Zm126 0Z"/></svg>');
+    --icon--fact: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="18px"  ><path d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Zm24-80h252q45-32 69.5-79T700-580q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 54 24.5 101t69.5 79Zm126 0Z"/></svg>');
+
+    --icon--theorem: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"  ><path d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg>');
   }
   
   .admonition.definition {
@@ -35,5 +37,23 @@
     background-color: #FF7E00;
     -webkit-mask-image: var(--icon--fact);
     mask-image: var(--icon--fact);
+    height: 1.1em;
+  }
+
+  .admonition.theorem {
+    border-color: #5D8AA8;
+    font-size: 1em;
+  }
+
+  .admonition.theorem > .admonition-title {
+    background-color: rgba(93, 138, 168, 0.1);
+    border-color: #5D8AA8;
+    font-size: large;
+  }
+
+  .admonition.theorem > .admonition-title::before {
+    background-color: #5D8AA8;
+    -webkit-mask-image: var(--icon--theorem);
+    mask-image: var(--icon--theorem);
     height: 1.1em;
   }

@@ -7,6 +7,7 @@
 :numbered:
 
 Metric Spaces<metric-spaces.md>
+Kolmogorov Complexity<kolmogorov-complexity.md>
 ```
 
 
