@@ -8,6 +8,7 @@
 
 Metric Spaces<metric-spaces.md>
 Kolmogorov Complexity<kolmogorov-complexity.md>
+Computability Theory<computability-theory.md>
 ```
 
 [Exercises](hw.md)

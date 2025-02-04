@@ -1,6 +1,6 @@
 # Exercises
 
-## 1. Proof the computability
+## 1. Computability Proofs
 
 Prove that $f: \set{1,0}^* \to {\mathbb{R}}$ is computable if and only if it is both lower and upper semi-computable.
 
