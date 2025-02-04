@@ -10,6 +10,7 @@ Metric Spaces<metric-spaces.md>
 Kolmogorov Complexity<kolmogorov-complexity.md>
 ```
 
+[Exercises](hw.md)
 
 ### References
 
