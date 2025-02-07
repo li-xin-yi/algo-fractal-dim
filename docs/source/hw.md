@@ -2,13 +2,13 @@
 
 ## 1. Computability Proofs
 
-Prove that $f: \set{1,0}^* \to {\mathbb{R}}$ is computable if and only if it is both lower and upper semi-computable.
+Prove that $f: \set{0,1}^* \to {\mathbb{R}}$ is computable if and only if it is both lower and upper semi-computable.
 
 ## 2. Lower graph and lower semicomputability
 
-Prove that a function $f: \set{1,0}^* \to {\mathbb{R}}$ is lower semicomputable if and only if its lower graph
+Prove that a function $f: \set{0,1}^* \to {\mathbb{R}}$ is lower semicomputable if and only if its lower graph
 
-$$G^-(f)=\set{(x,q)\in\set{1,0}^*\times\mathbb{Q}\mid q<f(x)}$$
+$$G^-(f)=\set{(x,q)\in\set{0,1}}^*\times\mathbb{Q}\mid q<f(x)}$$
 
 is computably enumerable.
 
