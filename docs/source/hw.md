@@ -8,7 +8,7 @@ Prove that $f: \set{0,1}^* \to {\mathbb{R}}$ is computable if and only if it is 
 
 Prove that a function $f: \set{0,1}^* \to {\mathbb{R}}$ is lower semicomputable if and only if its lower graph
 
-$$G^-(f)=\set{(x,q)\in\set{0,1}}^*\times\mathbb{Q}\mid q<f(x)}$$
+$$G^-(f)=\set{(x,q)\in\set{0,1}^*\times\mathbb{Q}\mid q<f(x)}$$
 
 is computably enumerable.
 
