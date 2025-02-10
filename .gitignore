@@ -492,3 +492,5 @@ pyrightconfig.json
 
 venv/*
 *.DS_Store
+
+hw/*
